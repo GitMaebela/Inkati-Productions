@@ -19,7 +19,7 @@ src:url(../fonts/fonts/Sansation_Light.ttf);}
 	}.header-logo{
 	height: 180px;
 	width: 200px;
-	background-color: #09C;
+	background-color:transparent !important;
 	float: left;
 }.header-content{
 	float: right;

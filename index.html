@@ -12,6 +12,9 @@ Web Development Freelancer
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>INKATI  Productions</title>
+
+	
+	<link rel="shortcut icon" href="images/I-logo.png"> 
 <style type="text/css">
 body {
 	background-color: #FFFFFF; padding:0; margin:0; 
@@ -19,6 +22,7 @@ body {
 </style>
 
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -61,19 +65,17 @@ body {
         
         
             <a href="index.html" title="Inkati Productions">
-            <img src="Logo.jpg" width="200" height="180"  style="float:left;"/></a>
+            
+            <img src="images/I-logo.png" style="float:left;"/></a>
         </div> <!--End header-logo-->
     
     	<div class="header-content">
     		<div class="header-social">
             
                 <li><a href="" class="fa fa-facebook-square"></a></li>
-                
                 <li><a href="" class="fa fa-twitter-square" ></a></li>
-                
                 <li><a href="" class="fa fa-linkedin-square"></a></li>
-                
-                <li><a href="" class="fa fa-youtube-square"></a></li>
+              <li><a href="" class="fa fa-youtube-square"></a></li>
                 
             
             <span class="search-form">
@@ -87,12 +89,10 @@ body {
             <div class="header-menu">
             	<ul>
                 <!--<li><a href="#">Home</a></li> -->
-                <li><a href="#">About us</a></li> 
-                <li><a href="#">Productions</a></li><li><a href="#">Music</a></li> 
-                <li><a href="#">Gallery</a></li> 
-                
-                <li><a href="#">Auditions</a></li> 
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#aboutUs">About us</a></li> 
+                <li><a href="#production">Productions</a></li><li><a href="#music">Music</a></li> 
+                <li><a href="#gallery">Gallery</a></li> 
+                <li><a href="#contactForm">Contact us</a></li>
                 </ul>
             </div> <!-- End header-menu-->
             
@@ -106,43 +106,51 @@ body {
 MOVING BANNER 
 =====
 -->   
+
+	<div class="container">
+    	<div class="row">
+        
         <div class="moving-banner-section">
-        
-                <video width="850" height="auto" controls="controls" style="background-color:#ddd;">
-                    <source type="video/mp4"; codecs="avc1.42E01E, mp4.40.2" src="../../4. Research & Development/5. Web Development/Complete-MacroAnt/film/Xmovies8_SuitsSeason4.mp4" />
-                
-                
-                </video>
+                    
+                    	<div class="col-md-9">
+                        
+                            <video width="100%" height="auto" controls="controls" style="background-color:#ddd;">
+                                <source type="video/mp4"; codecs="avc1.42E01E, mp4.40.2" src="../../4. Research & Development/5. Web Development/Complete-MacroAnt/film/Xmovies8_SuitsSeason4.mp4" />
+                            
+                            
+                            </video>
+                            
+                         </div>
+                         
+                         <div class="col-md-3">
             
-          <div class="quick-update">
-                <center><h3>Quick update </h3></center>
-          </div>
+                              <div class="quick-update">
+                                    <center><h3>Quick update </h3></center>
+                              </div>
+                          
+                          </div>
         
-        </div><!-- End moving-banner-section-->
+        </div>
+       </div>
+        
+     </div>
         
 <!--
 =====
 INTRO 
 =====
 -->
-        
-        <div class="" style=" height:500px; background-image:url(../../../3.%20Revue%20FM/Revue%20FM%20Online/G/background2.png); background-color:#960; background-position:left center; background-repeat:no-repeat; background-attachment:fixed; height:400px;"> 
-          <!--Mission-->
-          <div class="container">
-          <h3>The future</h3>
-          
-          
-          </div>
-          
-        </div>
+
+<div class="" style=" min-height:400px; background-color:#000; border-top:dashed 1px #000000; ">
         
         
         
-        <div class="" style="height:400px; background-color:#000; border-top:dashed 1px #000000; ">
         
-        <div class="" style=" width:50%; height:100%; float:left; background-color:#fff;">
         
-        <img src="../../3. Graphic Design/f3dc35663347b44ba386e358fb5a8556.png" width="600" height="434" />
+  <div class="" style=" width:50%; height:100%; float:left; background-color:#fff;">
+        
+        	<img src="images/Equipment.png"  class="img-responsive" />
+        
         </div>
 
 
@@ -152,16 +160,14 @@ INKATI SERVICES
 =====
 -->
         
-        <div class="">
-        <span style="font-family:Sans; font-size:36px; color:#CCC;">Full package </span>
-        <br />
-        erg<p>
-        wergf
-        wergf<p>
-        serg<p>
-        seg<p>
-        <a href="#" style="background-color:rgba(153,153,153,1); padding:20px 50px 20px 50px; color:rgba(255,255,255,1);">Read more</a>
-        
+        <div class="" style=" padding:10px;">
+          <span style="font-family:Sans; font-size:36px; color:#fff;">Full package </span>
+                <br />
+                We write our own scripts<p>
+                We act, we direct, we edit<p>
+                
+                <a href="#" style="background-color:rgba(153,153,153,1); padding:20px 50px 20px 50px; color:rgba(255,255,255,1);">Read more</a>
+                
         </div>
         
         </div>
@@ -234,19 +240,40 @@ PARTNERS
 -->
         <div class="cam">
         <!--Partners-->
-        <div class="" style="height:350px; padding: 80px 0; width:100%; background-color:rgba(0,0,0,0.86);background-repeat:no-repeat; background-attachment:fixed;">
+        <div class="" style=" min-height:350px; height:auto; padding: 80px 0; width:100%; background-color:rgba(0,0,0,0.86);background-repeat:no-repeat; background-attachment:fixed;">
         
         
        
         <div class="container">
           <h3 style="font-family:Sans; font-size:40px; color:#eee; margin-bottom:60px;">Music clips</h3>
           
-          <audio controls="controls">
-          <source src="../../../../Downloads/Wale - Running Back (feat. Lil Wayne) OFFICIAL MUSIC VIDEO.mp3" type="audio/mpeg"
-          </audio>
+          
+          <div class="col-md-4">
+              
+              <audio controls="controls">
+              <source src="../../../../Downloads/Wale - Running Back (feat. Lil Wayne) OFFICIAL MUSIC VIDEO.mp3" type="audio/mpeg"
+              </audio>
+         </div>
+          
+          
+          <div class="col-md-4">
+              
+              <audio controls="controls">
+              <source src="../../../../Downloads/Wale - Running Back (feat. Lil Wayne) OFFICIAL MUSIC VIDEO.mp3" type="audio/mpeg"
+              </audio>
+         </div>
+         
+         
+          <div class="col-md-4">
+              
+              <audio controls="controls">
+              <source src="../../../../Downloads/Wale - Running Back (feat. Lil Wayne) OFFICIAL MUSIC VIDEO.mp3" type="audio/mpeg"
+              </audio>
+         </div>
+          
         </div>
         
-        </div>
+   </div>
 
 <!--
 =====
@@ -254,7 +281,7 @@ CONTACT US
 =====
 -->
         
-        <div class="" style=" padding:90px 0px 90px 0px;">
+        <div class="" style=" padding:90px 0px 90px 0px;" id="contactForm">
         <div class="container">
         
             <div class="" style="width:70%; float:left; ">
@@ -269,7 +296,7 @@ CONTACT US
             <input name="phone" type="text" placeholder="Phone" style="width:380px; padding:0 20px 0 20px; font-size:14px;height:35px;"/> <br /><br />
             
             
-            <textarea name="message" cols="" rows="" required="required" placeholder="Message" style="width:760px; padding:0 20px 0 20px; height:90px;">
+            <textarea name="message" cols="" rows="" required="required" placeholder="Message" style="padding:0 20px 0 20px; height:90px;" class="form-control">
             
             </textarea>* <br /><br />
             
@@ -279,9 +306,16 @@ CONTACT US
             
             </div>
         
+        
+        
+        
+        <!--
+        
             <div class="" style="float:left;width:30%; height:300px; background-color:rgba(153,51,153,1);">
                 Google maps
             </div>
+            
+            -->
             
             </div>
         </div>
@@ -307,11 +341,8 @@ GALLERY
                     <li class="pull-right">
                         <ol class="type">
                             <li><a href="#" data-filter="*" class="active" style="color:#ddd; text-decoration:none;">Gallery</a></li>
-                            <li><a href="#" data-filter=".web" style="color:#ddd; text-decoration:none;">Presenters</a></li>
-                            <li><a href="#" data-filter=".photography" style="color:#ddd; text-decoration:none;">Producers</a></li>
-                            <li><a href="#" data-filter=".app" style="color:#ddd; text-decoration:none;">Management</a></li>
-                           <!-- <li><a href="#" data-filter=".branding" >Branding</a></li> -->
-                        </ol>
+                            
+                      </ol>
                     </li>
                 </ul>
                 <div class="clearfix"></div>
@@ -324,13 +355,13 @@ GALLERY
                         <div class="hover-bg">
                             <a href="#">
                                 <div class="hover-text">
-                                    <h4>Weza Matomane</h4>
-                                    <small>Voice-over artist</small>
+                                    <h4>Inkati co-founders </h4>
+                                    <small>In.. Kalie. Titus</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i
                                 ></div>
                                 <!--<img src="img/portfolio/01.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/119 Revue FM.jpg" class="img-responsive" alt="..."/> </a>
+                            <img src="images/_inkati3.jpg" class="img-responsive" alt="..."/> </a>
                         </div>
                     </div>
                 </div>
@@ -340,13 +371,13 @@ GALLERY
                         <div class="hover-bg">
                             <a href="#">
                                 <div class="hover-text">
-                                    <h4>Mil</h4>
-                                    <small>Poetic stream:Presenter</small>
+                                    <h4>Initial Inkati</h4>
+                                    <small>Acting Auditions</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div><!--
                                 <img src="img/portfolio/02.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/46Revue FM.jpg" class="img-responsive" alt="..."/> </a>
+                            <img src="images/_inkati2.jpg" class="img-responsive" alt="..."/> </a>
                         </div>
                     </div>
                 </div>
@@ -356,13 +387,13 @@ GALLERY
                         <div class="hover-bg">
                             <a href="#">
                                 <div class="hover-text">
-                                    <h4>Weza Matomane</h4>
-                                    <small>Public speaker</small>
+                                    <h4>Inkati Recording artists</h4>
+                                    <small>In studio</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
                                <!-- <img src="img/portfolio/03.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/44Revue FM.jpg" class="img-responsive" alt="..."/> </a>
+                            <img src="images/_inkati1.jpg" class="img-responsive" alt="..."/> </a>
                         </div>
                     </div>
                 </div>
@@ -372,83 +403,19 @@ GALLERY
                         <div class="hover-bg">
                             <a href="#">
                                 <div class="hover-text">
-                                    <h4>Weza Matomane</h4>
-                                    <small>Presenter</small>
+                                    <h4>Inkati Crew</h4>
+                                    <small>During a C-Light (16 June comemoration) event</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
                                 <!--<img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
                                 -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/7Revue FM.jpg" class="img-responsive" alt="..."/> </a>
+                            <img src="images/_inkati4.jpg" class="img-responsive" alt="..."/> </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Taraji Henson</h4>
-                                    <small>  </small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <!--<img src="img/portfolio/05.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/26Revue FM.jpg" class="img-responsive" alt="..."/> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 app">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>News team</h4>
-                                    <small>  </small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <!--<img src="img/portfolio/06.jpg" class="img-responsive" alt="...">
-                                -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/29Revue FM.jpg" class="img-responsive" alt="..." /> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4> </h4>
-                                    <small>Actor</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <!--<img src="img/portfolio/07.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/39Revue FM.jpg" class="img-responsive" alt="..." /> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Rethabile Raphekela</h4>
-                                    <small>Voice-over artist</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                               <!-- <img src="img/portfolio/08.jpg" class="img-responsive" alt="..."> -->
-                            <img src="../../../3. Revue FM/__SOCIAL MEDIA/40Revue FM.jpg" class="img-responsive" alt="..." /> </a>
-                        </div>
-                    </div>
-                </div>
-
+               
             </div>
         </div>
     </div>
@@ -462,8 +429,7 @@ GALLERY
 =====
 CLIPS
 =====
- background-image:url(film-331553_1280.png); height:380px;
- 
+
 -->
         <div class="" style=" background-repeat:no-repeat; padding:70px 0px 100px;">
         
@@ -472,8 +438,8 @@ CLIPS
         <h3 style="font-family:Sans; font-size:40px; color:#111; margin-bottom:60px;">Video clips</h3>
         
         <!--Video-->
-        <div class="" style=" float:left; background-color:rgba(204,204,204,1); width:auto; height:auto; ">
-        <video width="400" height="auto" controls="controls" style="background-color:#ddd;">
+        <div class=" col-md-4">
+        <video width="100%" height="auto" controls="controls" style="background-color:#ddd;">
         <source type="video/mp4"; src="../../4. Research & Development/5. Web Development/Complete-MacroAnt/film/Xmovies8_SuitsSeason4.mp4" />
           </video>
         </div>
@@ -481,10 +447,11 @@ CLIPS
         
         
         <!--Video-->
-        <div class="" style=" float:left; background-color:rgba(204,204,204,1); width:auto; height:auto; margin-left:35px;">
+        <div class="col-md-4">
         <a href="#" data-toggle="modal" data-target="#myModal">
-        <video width="400" height="auto" controls="controls" style="background-color:#ddd;">
-        <source type="video/mp4"; codecs="avc1.42E01E, mp4.40.2" src="../../4. Research & Development/5. Web Development/Complete-MacroAnt/film/Xmovies8_SuitsSeason4.mp4" />
+        
+        <video width="100%" height="auto" controls="controls" style="background-color:#ddd;">
+        <source type="video/mp4"; codecs="avc1.42E01E, mp4.40.2" />
                 
          </video></a>
          
@@ -492,9 +459,9 @@ CLIPS
         <!--End Video-->
         
         <!--Video-->
-        <div class="" style=" float:left; background-color:rgba(204,204,204,1); width:auto; height:auto; margin-left:35px;">
+        <div class="col-md-4">
         
-        <video width="400" height="auto" controls="controls" style="background-color:#ddd;">
+        <video width="100%" height="auto" controls="controls" style="background-color:#ddd;">
         <source type="video/mp4"; codecs="avc1.42E01E, mp4.40.2" src="../../4. Research & Development/5. Web Development/Complete-MacroAnt/film/Xmovies8_SuitsSeason4.mp4" />
          </video>
         
@@ -551,7 +518,7 @@ FOOTER
         
         <div class="container">
         
-          <div class="" style="width:25%; float:left;"> 
+          <div class="col-md-4"> 
           
           <h3 style="color:rgba(204,204,204,1);font-weight:lighter;">Company</h3>
           
@@ -570,7 +537,9 @@ FOOTER
           </ul>
           </div>
           
-          <div class="" style="width:25%; float:left;"> 
+          
+          
+          <div class="col-md-4"> 
           
           <h3  style="color:rgba(204,204,204,1); font-weight:lighter;">Get in touch</h3>
           <ul style="margin-left:-40px; list-style:none; font-size:.79em; color:#999;">
